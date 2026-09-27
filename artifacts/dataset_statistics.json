@@ -1,0 +1,348 @@
+{
+  "dataset_path": "data/iraqi_support_dataset_3000.json",
+  "schema_validation": "passed",
+  "total_tickets": 3000,
+  "total_messages": 4170,
+  "category_count": 8,
+  "categories": {
+    "failed_transfer": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "wrong_recipient": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "payment_pending": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "login_problem": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "card_issue": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "account_issue": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "agent_dispute": {
+      "count": 375,
+      "percentage": 12.5
+    },
+    "other": {
+      "count": 375,
+      "percentage": 12.5
+    }
+  },
+  "priorities": {
+    "high": {
+      "count": 1200,
+      "percentage": 40.0
+    },
+    "medium": {
+      "count": 1475,
+      "percentage": 49.17
+    },
+    "low": {
+      "count": 325,
+      "percentage": 10.83
+    }
+  },
+  "category_priority_counts": {
+    "failed_transfer": {
+      "high": 331,
+      "medium": 44,
+      "low": 0
+    },
+    "wrong_recipient": {
+      "high": 375,
+      "medium": 0,
+      "low": 0
+    },
+    "payment_pending": {
+      "high": 48,
+      "medium": 327,
+      "low": 0
+    },
+    "login_problem": {
+      "high": 45,
+      "medium": 330,
+      "low": 0
+    },
+    "card_issue": {
+      "high": 93,
+      "medium": 261,
+      "low": 21
+    },
+    "account_issue": {
+      "high": 125,
+      "medium": 229,
+      "low": 21
+    },
+    "agent_dispute": {
+      "high": 183,
+      "medium": 171,
+      "low": 21
+    },
+    "other": {
+      "high": 0,
+      "medium": 113,
+      "low": 262
+    }
+  },
+  "messages_per_ticket": {
+    "single_message_ticket_count": 2100,
+    "single_message_ticket_percentage": 70.0,
+    "multi_message_ticket_count": 900,
+    "multi_message_ticket_percentage": 30.0,
+    "average": 1.39,
+    "median": 1.0,
+    "minimum": 1,
+    "maximum": 4,
+    "distribution": {
+      "1": 2100,
+      "2": 675,
+      "3": 180,
+      "4": 45
+    }
+  },
+  "combined_text_length_characters": {
+    "definition": "Character count after joining a ticket's message texts with one newline",
+    "average": 171.063,
+    "median": 168.0,
+    "minimum": 4,
+    "maximum": 478
+  },
+  "entity_availability": {
+    "amount": {
+      "present_count": 694,
+      "present_percentage": 23.13,
+      "missing_or_null_count": 2306,
+      "missing_or_null_percentage": 76.87
+    },
+    "transaction_id": {
+      "present_count": 542,
+      "present_percentage": 18.07,
+      "missing_or_null_count": 2458,
+      "missing_or_null_percentage": 81.93
+    },
+    "recipient": {
+      "present_count": 389,
+      "present_percentage": 12.97,
+      "missing_or_null_count": 2611,
+      "missing_or_null_percentage": 87.03
+    },
+    "account_id": {
+      "present_count": 1146,
+      "present_percentage": 38.2,
+      "missing_or_null_count": 1854,
+      "missing_or_null_percentage": 61.8
+    },
+    "date": {
+      "present_count": 1159,
+      "present_percentage": 38.63,
+      "missing_or_null_count": 1841,
+      "missing_or_null_percentage": 61.37
+    }
+  },
+  "text_character_prevalence": {
+    "arabic_indic_or_eastern_arabic_digits": {
+      "ticket_count": 671,
+      "ticket_percentage": 22.37
+    },
+    "western_digits": {
+      "ticket_count": 1643,
+      "ticket_percentage": 54.77
+    },
+    "latin_letters": {
+      "ticket_count": 823,
+      "ticket_percentage": 27.43,
+      "note": "Latin-letter presence is measurable but does not by itself prove linguistic code-switching."
+    }
+  },
+  "duplicates": {
+    "duplicate_ticket_id_values": 0,
+    "tickets_with_repeated_ids_beyond_first": 0,
+    "duplicate_message_id_values": 0,
+    "messages_with_repeated_ids_beyond_first": 0,
+    "exact_duplicate_text_groups": 0,
+    "messages_in_exact_duplicate_groups": 0,
+    "exact_duplicate_messages_beyond_first": 0,
+    "normalized_duplicate_text_groups": 0,
+    "normalized_duplicate_messages_beyond_first": 0,
+    "normalization": "Unicode-preserving lowercase plus collapsed whitespace"
+  },
+  "repository_split": {
+    "method": "Sequential repository-order slicing without shuffling or stratification",
+    "notebook_formula": "train = first 70%; test = first 85% of remainder; validation = rest of remainder",
+    "splits": {
+      "train": {
+        "count": 2100,
+        "percentage_of_dataset": 70.0,
+        "first_ticket_id": 1,
+        "last_ticket_id": 2100,
+        "categories": {
+          "failed_transfer": {
+            "count": 279,
+            "percentage": 13.29
+          },
+          "wrong_recipient": {
+            "count": 250,
+            "percentage": 11.9
+          },
+          "payment_pending": {
+            "count": 253,
+            "percentage": 12.05
+          },
+          "login_problem": {
+            "count": 265,
+            "percentage": 12.62
+          },
+          "card_issue": {
+            "count": 251,
+            "percentage": 11.95
+          },
+          "account_issue": {
+            "count": 260,
+            "percentage": 12.38
+          },
+          "agent_dispute": {
+            "count": 260,
+            "percentage": 12.38
+          },
+          "other": {
+            "count": 282,
+            "percentage": 13.43
+          }
+        },
+        "priorities": {
+          "high": {
+            "count": 843,
+            "percentage": 40.14
+          },
+          "medium": {
+            "count": 1023,
+            "percentage": 48.71
+          },
+          "low": {
+            "count": 234,
+            "percentage": 11.14
+          }
+        }
+      },
+      "validation": {
+        "count": 135,
+        "percentage_of_dataset": 4.5,
+        "first_ticket_id": 2866,
+        "last_ticket_id": 3000,
+        "categories": {
+          "failed_transfer": {
+            "count": 19,
+            "percentage": 14.07
+          },
+          "wrong_recipient": {
+            "count": 12,
+            "percentage": 8.89
+          },
+          "payment_pending": {
+            "count": 16,
+            "percentage": 11.85
+          },
+          "login_problem": {
+            "count": 24,
+            "percentage": 17.78
+          },
+          "card_issue": {
+            "count": 22,
+            "percentage": 16.3
+          },
+          "account_issue": {
+            "count": 13,
+            "percentage": 9.63
+          },
+          "agent_dispute": {
+            "count": 16,
+            "percentage": 11.85
+          },
+          "other": {
+            "count": 13,
+            "percentage": 9.63
+          }
+        },
+        "priorities": {
+          "high": {
+            "count": 51,
+            "percentage": 37.78
+          },
+          "medium": {
+            "count": 76,
+            "percentage": 56.3
+          },
+          "low": {
+            "count": 8,
+            "percentage": 5.93
+          }
+        }
+      },
+      "test": {
+        "count": 765,
+        "percentage_of_dataset": 25.5,
+        "first_ticket_id": 2101,
+        "last_ticket_id": 2865,
+        "categories": {
+          "failed_transfer": {
+            "count": 77,
+            "percentage": 10.07
+          },
+          "wrong_recipient": {
+            "count": 113,
+            "percentage": 14.77
+          },
+          "payment_pending": {
+            "count": 106,
+            "percentage": 13.86
+          },
+          "login_problem": {
+            "count": 86,
+            "percentage": 11.24
+          },
+          "card_issue": {
+            "count": 102,
+            "percentage": 13.33
+          },
+          "account_issue": {
+            "count": 102,
+            "percentage": 13.33
+          },
+          "agent_dispute": {
+            "count": 99,
+            "percentage": 12.94
+          },
+          "other": {
+            "count": 80,
+            "percentage": 10.46
+          }
+        },
+        "priorities": {
+          "high": {
+            "count": 306,
+            "percentage": 40.0
+          },
+          "medium": {
+            "count": 376,
+            "percentage": 49.15
+          },
+          "low": {
+            "count": 83,
+            "percentage": 10.85
+          }
+        }
+      }
+    }
+  },
+  "token_length_statistics": "not calculated; MODEL_NAME is configured via .env, but tokenizer/model files are external to the versioned repository"
+}
