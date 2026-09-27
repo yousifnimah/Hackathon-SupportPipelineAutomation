@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.14 (HackathonProject)" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="SSH (sftp://yousif@192.168.60.2:22/home/yousif/.virtualenvs/HackathonProject/bin/python)" project-jdk-type="Python SDK" />
 </project>
